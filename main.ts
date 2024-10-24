@@ -83,7 +83,7 @@ console.log(newObject) // {name:"Muhammad",age:25}
 // type of student object
 type std = {
     name:string,
-    rollNumber:number,
+    rollNumber:string,
     teacherName:string,
     quarter:number,
     institution:string,
@@ -93,7 +93,7 @@ type std = {
 
 let studentInQrarter1:std = {
     name:"Shahab Ud Din",
-    rollNumber:42515,
+    rollNumber:"xyz",
     teacherName:"Hamzah Syed",
     quarter:1,
     institution:"GIAIC",
