@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 let myObject = {
     name: "Shahab",
     age: 23,
-    hobby: "Coding"
+    hobby: "Coding",
 };
-// using dot notation 
+// using dot notation
 console.log(myObject.name); // output = shahab
 // way number:2. Square Bracket Notation
 // Square bracket notation ka istemal tum tab karte ho jab property ka naam variable mein ho ya agar property ka naam kisi special character ya space mein ho.
@@ -17,7 +17,7 @@ let student = {
     name: "Shahab Ud din",
     age: 23,
 };
-// getting object property dynamically 
+// getting object property dynamically
 // to do this first save the property name in a variable
 let propertyName = "name";
 // now declare a varibale to save property value
@@ -28,7 +28,7 @@ let player = {
     name: "Babar Azam",
     age: 30,
     role: "Right Hand Batter",
-    country: "Pakistan"
+    country: "Pakistan",
 };
 let playerRole = "role"; // dynamic property name
 console.log(player[playerRole]); // Right Hand Batter
@@ -37,7 +37,7 @@ let mobile = {
     brand: "Samsung Galaxy",
     model: "A32",
     year: 2022,
-    color: "White"
+    color: "White",
 };
 let model = "model"; // dynamic property name
 console.log(mobile[model]); // output = A32
@@ -46,16 +46,16 @@ let Car = {
     brand: "Toyota",
     model: "GLI",
     year: 2020,
-    color: "Silver"
+    color: "Silver",
 };
 let carBrand = "brand";
-console.log(Car[carBrand]); // Toyota 
+console.log(Car[carBrand]); // Toyota
 // example 5
 let bike = {
     brand: "HONDA",
     model: "125",
     year: 2021,
-    color: "Black"
+    color: "Black",
 };
 let bikeColor = "color";
 console.log(bike["color"]); // Black
@@ -63,7 +63,7 @@ const studentData = {
     "first name": "Shahab Ud Din",
     "last name": "Bhutto",
     email: "bhuttoshahab9@gmail.com",
-    "roll number": 222222
+    "roll number": 222222,
 };
 let lastName = "last name";
 console.log(studentData[lastName]); // Bhutto
@@ -91,14 +91,14 @@ let obj = {
 example: 1;
 let origionalObject = {
     name: "Shahab",
-    age: 22
+    age: 22,
 };
 origionalObject.age = 23;
 // console.log(origionalObject) // {name:"Shahab",age:23}
 // example 2
 let obj1 = {
     name: "Shahab",
-    age: 22
+    age: 22,
 };
 obj1.name = "Shahab Ud Din";
 // console.log(obj1) // {name:"Shahab Ud Din",age:22}
@@ -108,25 +108,25 @@ obj1.name = "Shahab Ud Din";
 let initialObject = {
     name: "Shahab",
     age: 23,
-    gender: "Male"
+    gender: "Male",
 };
 // now update the value of an object
 let updateObject = {
     ...initialObject,
     name: "Ali",
     gender: "male",
-    Caste: "Yar Nahin kabr"
+    Caste: "Yar Nahin kabr",
 };
 // console.log(updateObject) // { name:"Ali",gender:"male",Caste:"Yar Nahin kabr"};
 // -------------------------------------- example 2 ---------------------------------------
 let objectOne = {
     name: "Muhammad",
-    age: 24
+    age: 24,
 };
 // now updateObject
 let newObject = {
     ...objectOne,
-    age: 25
+    age: 25,
 };
 let studentInQrarter1 = {
     name: "Shahab Ud Din",
@@ -135,16 +135,16 @@ let studentInQrarter1 = {
     quarter: 1,
     institution: "GIAIC",
     subject: "TypeScript",
-    timeSlot: "Saturday 2pm to 5pm"
+    timeSlot: "Saturday 2pm to 5pm",
 };
 let inQuarter2 = {
     ...studentInQrarter1,
     teacherName: "Muhammad Bilal",
     quarter: 2,
-    subject: "Next Js"
+    subject: "Next Js",
 };
 // console.log("I in quarter 1")
-// console.log(studentInQrarter1); 
+// console.log(studentInQrarter1);
 // console.log("In in quarter 2")
 // console.log(inQuarter2); // data will be updated
 // ------------- exaple 4 ------------------
@@ -153,7 +153,7 @@ let firstSemester = {
     subj2: "Applied Calculus",
     subj3: "Applied Physics",
     subj4: "Islamiat",
-    subj5: "Introduction to Computers"
+    subj5: "Introduction to Computers",
 };
 // now as you are in 2nd semester in QUEST so update your subjects
 let secondSemester = {
@@ -161,7 +161,7 @@ let secondSemester = {
     subj2: "Circuit Analysis",
     subj3: "Linear Algebra",
     subj4: "Computer Programming",
-    subj5: "Electronic Workshop"
+    subj5: "Electronic Workshop",
 };
 // console.log(secondSemester);
 // --------------------- example 5 ---------------------
