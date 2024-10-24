@@ -1,16 +1,117 @@
-// TOPIC:1                    Spread operator with arrays
+// There are two ways to get or print Object properties
+// Way number 1 is:
+// USING DOT Notation:
 
+let myObject = {
+    name:"Shahab",
+    age:23,
+    hobby:"Coding"
+};
+
+// using dot notation 
+console.log(myObject.name) // output = shahab
+
+
+// way number:2. Square Bracket Notation
+// Square bracket notation ka istemal tum tab karte ho jab property ka naam variable mein ho ya agar property ka naam kisi special character ya space mein ho.
+
+// example:1 Dynamic Access Using Variable
+let student = {
+    name:"Shahab Ud din",
+    age:23,
+};
+
+// getting object property dynamically 
+// to do this first save the property name in a variable
+let propertyName = "name";
+// now declare a varibale to save property value
+let studentName  = student[propertyName];
+console.log(studentName) // Shahab Ud Din
+
+
+// example 2
+let player = {
+    name:"Babar Azam",
+    age:30,
+    role:"Right Hand Batter",
+    country:"Pakistan"
+};
+
+let playerRole = "role"; // dynamic property name
+console.log(player[playerRole]); // Right Hand Batter
+
+// example 3:
+let mobile = {
+    brand:"Samsung Galaxy",
+    model:"A32",
+    year:2022,
+    color:"White"
+};
+
+let model = "model"; // dynamic property name
+console.log(mobile[model]); // output = A32
+
+// example 4
+let Car =  {
+    brand:"Toyota",
+    model:"GLI",
+    year:2020,
+    color:"Silver"
+};
+
+let carBrand = "brand";
+console.log(Car[carBrand]); // Toyota 
+
+// example 5
+let bike = {
+    brand:"HONDA",
+    model:"125",
+    year:2021,
+    color:"Black"
+};
+
+let bikeColor = "color";
+console.log(bike["color"]); // Black
+
+// ---------------------------- Accessing Object property name with space  -------------------------
+type data = {
+    "first name":string,
+    "last name":string,
+     email:string,
+     "roll number":number
+};
+const studentData:data = {
+      "first name":"Shahab Ud Din",
+      "last name":"Bhutto",
+      email:"bhuttoshahab9@gmail.com",
+      "roll number":222222
+    };
+
+let lastName = "last name";
+console.log(studentData[lastName]); // Bhutto
+console.log(studentData["roll number"])
+
+// ---------------------------- Conclusion -----------------------------------------
+
+// Dot Notation: Tab use karo jab property ka naam pata ho.
+// Square Bracket Notation: Tab use karo jab property ka naam variable ho ya koi special character ya space ho.
+
+
+
+// -----------------------------------------------------------------------------------------------------
+// TOPIC:1                    Spread operator with arrays
+// -----------------------------------------------------------------------------------------------------
 example:1
 let array1 = [1,2,3,4];
 let array2 = [5,6,7,8];
 
-console.log(...array1,...array2); // 1,2,3,4,5,6,7,8
+// console.log(...array1,...array2); // 1,2,3,4,5,6,7,8
 
 example:2
 let oddNumbers = [1, 3, 5, 7, 9];
 let evenNumbers = [2, 4, 6, 8, 10];
 let combinedNumbers = [...oddNumbers, ...evenNumbers];
-console.log(combinedNumbers); // output [1,3,5,7,9,2,4,6,8,10]
+// console.log(combinedNumbers); // output [1,3,5,7,9,2,4,6,8,10]
 
 // tOPIC2: -------------Spread operator with object -------------
 type myObj = {
@@ -33,7 +134,7 @@ let origionalObject = {
 };
 
 origionalObject.age = 23;
-console.log(origionalObject) // {name:"Shahab",age:23}
+// console.log(origionalObject) // {name:"Shahab",age:23}
 
 // example 2
 let obj1 = {
@@ -41,7 +142,7 @@ let obj1 = {
    age:22
 };
 obj1.name = "Shahab Ud Din";
-console.log(obj1) // {name:"Shahab Ud Din",age:22}
+// console.log(obj1) // {name:"Shahab Ud Din",age:22}
 
 // ----------------------------------------------------------------------------------------------------
 // 2nd way to update object values is using spread operator
@@ -61,7 +162,7 @@ let updateObject = {
     gender:"male",
     Caste:"Yar Nahin kabr"
 };
-console.log(updateObject) // { name:"Ali",gender:"male",Caste:"Yar Nahin kabr"};
+// console.log(updateObject) // { name:"Ali",gender:"male",Caste:"Yar Nahin kabr"};
 
 // -------------------------------------- example 2 ---------------------------------------
 
@@ -77,7 +178,7 @@ let newObject = {
     age:25
 };
 
-console.log(newObject) // {name:"Muhammad",age:25}
+// console.log(newObject) // {name:"Muhammad",age:25}
 
 // ------------------------ example 3 ----------------------------------
 // type of student object
@@ -108,10 +209,10 @@ let inQuarter2:std = {
      subject:"Next Js"
 
 }
-console.log("I in quarter 1")
-console.log(studentInQrarter1); 
-console.log("In in quarter 2")
-console.log(inQuarter2); // data will be updated
+// console.log("I in quarter 1")
+// console.log(studentInQrarter1); 
+// console.log("In in quarter 2")
+// console.log(inQuarter2); // data will be updated
 
 // ------------- exaple 4 ------------------
 let firstSemester = {
@@ -132,7 +233,7 @@ let secondSemester = {
        subj5:"Electronic Workshop"
 };
 
-console.log(secondSemester);
+// console.log(secondSemester);
 
 // --------------------- example 5 ---------------------
 const pakistanT20Team = {
@@ -170,7 +271,7 @@ const pakistanTestTeam = {
   player10: "Noman Ali",
   player11: "Sajid Khan",
 };
-console.log(pakistanT20Team); //see the output below:
+// console.log(pakistanT20Team); //see the output below:
 // {
 //     format: 'T20 Team',
 //     player1: 'Babar Azam',
@@ -186,7 +287,7 @@ console.log(pakistanT20Team); //see the output below:
 //     player11: 'M Amir'
 //   }
 
-console.log(pakistanOdiTeam);// see the output below:
+// console.log(pakistanOdiTeam);// see the output below:
 
 // {
 //     format: 'ODI Team',
@@ -203,7 +304,7 @@ console.log(pakistanOdiTeam);// see the output below:
 //     player11: 'Muhammad Waseem'
 //   }
 
-console.log(pakistanTestTeam);// see the output below:
+// console.log(pakistanTestTeam);// see the output below:
 // {
 //     format: 'Test Team',
 //     player1: 'Babar Azam',
@@ -218,3 +319,5 @@ console.log(pakistanTestTeam);// see the output below:
 //     player10: 'Noman Ali',
 //     player11: 'Sajid Khan'
 //   }
+
+// ------------------------------------------------------------------------------------------------------------------
