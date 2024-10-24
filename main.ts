@@ -109,9 +109,9 @@ let inQuarter2:std = {
 
 }
 console.log("I in quarter 1")
-console.log(studentInQrarter1);
+console.log(studentInQrarter1); 
 console.log("In in quarter 2")
-console.log(inQuarter2);
+console.log(inQuarter2); // data will be updated
 
 // ------------- exaple 4 ------------------
 let firstSemester = {
